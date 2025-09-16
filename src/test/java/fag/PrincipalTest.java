@@ -133,7 +133,7 @@ public class PrincipalTest {
         testesQuestao4++;
         
         // Simular entrada do usuário
-        String input = "8.5\n";
+        String input = "8,5\n";
         ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes());
         Scanner scan = new Scanner(in);
         
@@ -148,7 +148,7 @@ public class PrincipalTest {
             
             // Verificar se a saída contém a mensagem de aprovado
             String output = out.toString();
-            assertTrue(output.contains("APROVADO"), "❌ ERRO: Nota 8.5 deve resultar em APROVADO");
+            assertTrue(output.contains("APROVADO"), "❌ ERRO: Nota 8,5 deve resultar em APROVADO");
         } finally {
             System.setOut(originalOut);
             scan.close();
